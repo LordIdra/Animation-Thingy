@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "5b6e09116fd6bb95",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fc6891ad8b9a840",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d743dc09b784f2c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Components/Prototypes/line.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "94032be3de80eebb",
+    "type": "split",
+    "children": [
+      {
+        "id": "60021b4ca8469e73",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3c2b318530045305",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a59f30b52886e3e7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c828d3e2a32d8cba",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "af2883980e00e4e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "8e42633e0bc1d6fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bb9064d3d57b23c8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Components/Prototypes/line.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "334c284bb252b57e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Components/Prototypes/line.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "cd3389cf50a0ec22",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e7be5621902abca5",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Components/Prototypes/line.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d743dc09b784f2c8",
+  "lastOpenFiles": [
+    "Components/Prototypes/icon.md",
+    "Components/Prototypes/text.md",
+    "Examples/LAN-WAN/scripts/devices.xyz",
+    "Examples/LAN-WAN/compounds/devices.xyz",
+    "Examples/LAN-WAN/compounds",
+    "Examples/compounds",
+    "Components/Components/Full Example.md",
+    "Examples/LAN-WAN/scripts/device.xyz",
+    "Examples/LAN-WAN/scripts/main.xyz",
+    "Examples/LAN-WAN/components/main.xyz",
+    "Examples/LAN-WAN/scripts",
+    "Examples/LAN-WAN/components/wires.xyz",
+    "Examples/LAN-WAN/components",
+    "Examples/LAN-WAN/Untitled.md",
+    "Scripting/Calls.md",
+    "Components/Components/Basic Syntax.md",
+    "Components/Components/Inheritance.md",
+    "Components/Introduction.md",
+    "Components/Prototypes/rect.md",
+    "Components/Prototypes/line.md",
+    "Components/Components/Sections.md",
+    "Scripting/Introduction (TODO).md",
+    "Components.md",
+    "inherited.md"
+  ]
+}

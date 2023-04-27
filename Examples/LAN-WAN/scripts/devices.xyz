@@ -1,0 +1,77 @@
+pub fn computer [x, y]
+    center [x, y]
+
+    device_rect [2, 0] [14, 2]
+    device_rect [8, 4] [12, 8]
+    device_rect [0, 8] [18, 14]
+    device_rect [2, 10] [16, 12]
+    device_text [10, 12] "COMPUTER"
+
+    device_port [12, 0] [14, 2]
+
+    port=[13, 1]
+
+
+pub fn switch [x, y]
+    center [x, y]
+
+    device_rect [0, 0] [26, 8]
+
+    device_port [2, 2] [4, 4]
+    device_port [6, 2] [8, 4]
+    device_port [10, 2] [12, 4]
+    device_port [14, 2] [16, 4]
+    device_port [18, 2] [20, 4]
+    device_port [22, 2] [24, 4]
+
+    device_text [22, -2] "SWITCH"
+    device_explanation @explanation [23, -1]
+
+    port1=[3, 3]
+    port2=[7, 3]
+    port3=[11, 3]
+    port4=[15, 3]
+    port5=[19, 3]
+    port6=[23, 3]
+
+
+pub fn printer [x, y]
+    center [x, y]
+
+    device_rect [0, 0] [14, 10]
+    device_rect [2, 2] [12, 4]
+    device_rect [2, 6] [6, 8]
+
+    device_port [8, 6] [10, 8]
+
+    device_text [7, -2] "PRINTER"
+
+    port=[9, 7]
+
+
+pub fn server [x, y]
+    center [x, y]
+
+    device_rect [0, 0] [14, 16]
+
+    device_rect [2, 2] [12, 4]
+    device_rect [2, 4] [12, 6]
+
+    device_rect [2, 8] [12, 10]
+    device_rect [2, 10] [12, 12]
+
+    device_port [0, 14] [2, 16]
+
+    port=[1, 15]
+
+
+/**
+pub fn router [x, y]
+    center [x, y]
+
+    device_rect [0, 0] [14, 12]
+    device_rect [2, 4] [6, 6]
+
+    device_text [13, -1] "ROUTER"
+    device_explanation DeviceExplanation [14, -1]
+**/
