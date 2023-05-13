@@ -75,7 +75,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "Release",
 			"projects" : 
 			[
 				{
@@ -100,15 +100,15 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "ALIB::@666d59fed2d05b3d65d5",
-					"jsonFile" : "target-ALIB-Debug-b6268fcb691e73404078.json",
+					"jsonFile" : "target-ALIB-Release-1d0432b4cbaaab1ac771.json",
 					"name" : "ALIB",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 4,
-					"id" : "ALIB_tests::@6bd442168bd56e7f5b98",
-					"jsonFile" : "target-ALIB_tests-Debug-8e29a995208fcf196e14.json",
-					"name" : "ALIB_tests",
+					"id" : "TestALIB::@6bd442168bd56e7f5b98",
+					"jsonFile" : "target-TestALIB-Release-ff85d97f4cf46e8a9ccc.json",
+					"name" : "TestALIB",
 					"projectIndex" : 0
 				}
 			]

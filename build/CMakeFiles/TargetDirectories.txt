@@ -9,4 +9,4 @@
 /home/idra/GitHub/Animation-Thingy/build/Modules/ALIB/src/CMakeFiles/ALIB.dir
 /home/idra/GitHub/Animation-Thingy/build/Modules/ALIB/tests/CMakeFiles/rebuild_cache.dir
 /home/idra/GitHub/Animation-Thingy/build/Modules/ALIB/tests/CMakeFiles/edit_cache.dir
-/home/idra/GitHub/Animation-Thingy/build/Modules/ALIB/tests/CMakeFiles/ALIB_tests.dir
+/home/idra/GitHub/Animation-Thingy/build/Modules/ALIB/tests/CMakeFiles/TestALIB.dir

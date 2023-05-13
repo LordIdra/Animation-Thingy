@@ -1,6 +1,5 @@
-set(test_files
-    "TestAddition.cpp"
-)
+add_executable(TestALIB ${test_files})
+target_include_directories(TestALIB PRIVATE "../src")
 
-add_executable(ALIB_tests ${test_files})
-target_include_directories(ALIB_tests PRIVATE "../src")
+find_package(Catch2 REQUIRED)
+target_link_libraries(TestALIB ALIB Catch2::Catch2WithMain)

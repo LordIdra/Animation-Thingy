@@ -1,19 +1,12 @@
 [
 {
-  "directory": "/home/idra/GitHub/Animation-Thingy/build",
-  "command": "/usr/bin/clang++-15   -I../Modules/ALIB/src/.  -g   -std=gnu++17 -o Modules/ALIB/src/CMakeFiles/ALIB.dir/Main.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ALIB/src/Main.cpp",
-  "file": "/home/idra/GitHub/Animation-Thingy/Modules/ALIB/src/Main.cpp"
-},
-
-{
-  "directory": "/home/idra/GitHub/Animation-Thingy/build",
-  "command": "/usr/bin/clang++-15   -I../Modules/ALIB/src/.  -g   -std=gnu++17 -o Modules/ALIB/src/CMakeFiles/ALIB.dir/Addition.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ALIB/src/Addition.cpp",
+  "directory": "/home/idra/GitHub/Animation-Thingy/build/Modules/ALIB/src",
+  "command": "/usr/bin/clang++-15    -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/ALIB.dir/Addition.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ALIB/src/Addition.cpp",
   "file": "/home/idra/GitHub/Animation-Thingy/Modules/ALIB/src/Addition.cpp"
 },
-
 {
-  "directory": "/home/idra/GitHub/Animation-Thingy/build",
-  "command": "/usr/bin/clang++-15   -I../Modules/ALIB/tests/../src  -g   -std=gnu++17 -o Modules/ALIB/tests/CMakeFiles/ALIB_tests.dir/TestAddition.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ALIB/tests/TestAddition.cpp",
+  "directory": "/home/idra/GitHub/Animation-Thingy/build/Modules/ALIB/tests",
+  "command": "/usr/bin/clang++-15   -I/home/idra/GitHub/Animation-Thingy/Modules/ALIB/tests/../src -I/home/idra/GitHub/Animation-Thingy/Modules/ALIB/src/. -isystem /home/idra/.conan2/p/catche826dfbf478db/p/include  -O3 -DNDEBUG   -std=gnu++17 -o CMakeFiles/TestALIB.dir/TestAddition.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ALIB/tests/TestAddition.cpp",
   "file": "/home/idra/GitHub/Animation-Thingy/Modules/ALIB/tests/TestAddition.cpp"
 }
 ]

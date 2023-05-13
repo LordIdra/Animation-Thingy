@@ -1,0 +1,2 @@
+/usr/bin/ar qc libALIB.a  CMakeFiles/ALIB.dir/Addition.cpp.o
+/usr/bin/ranlib libALIB.a

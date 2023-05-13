@@ -1,0 +1,1 @@
+. "/home/idra/GitHub/Animation-Thingy/build/conanrunenv-release-x86_64.sh"

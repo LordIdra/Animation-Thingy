@@ -1,5 +1,5 @@
-#include <Addition.cpp>
+#include <Addition.hpp>
 
 void TestAddition() {
-    
+    Add();
 }

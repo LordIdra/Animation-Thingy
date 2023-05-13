@@ -162,6 +162,35 @@
 		},
 		{
 			"path" : "Modules/ALIB/tests/CMakeLists.txt"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Catch2ConfigVersion.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Catch2Config.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/cmakedeps_macros.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Catch2Targets.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Catch2-release-x86_64-data.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "build/Catch2-Target-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.16/Modules/CMakeFindDependencyMacro.cmake"
 		}
 	],
 	"kind" : "cmakeFiles",

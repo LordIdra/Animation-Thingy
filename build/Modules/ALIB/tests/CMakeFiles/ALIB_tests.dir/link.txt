@@ -1,0 +1,1 @@
+/usr/bin/clang++-15  -O3 -DNDEBUG   CMakeFiles/ALIB_tests.dir/TestAddition.cpp.o  -o ALIB_tests   -L/home/idra/.conan2/p/catche826dfbf478db/p/lib  -Wl,-rpath,/home/idra/.conan2/p/catche826dfbf478db/p/lib /home/idra/.conan2/p/catche826dfbf478db/p/lib/libCatch2Main.a -lm /home/idra/.conan2/p/catche826dfbf478db/p/lib/libCatch2.a 
