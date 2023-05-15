@@ -53,148 +53,244 @@ CMAKE_BINARY_DIR = /home/idra/GitHub/Animation-Thingy/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: Modules/all
+all: Modules/AnimationLibrary/all
+all: Modules/ComponentCompiler/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: Modules/preinstall
+preinstall: Modules/AnimationLibrary/preinstall
+preinstall: Modules/ComponentCompiler/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: Modules/clean
+clean: Modules/AnimationLibrary/clean
+clean: Modules/ComponentCompiler/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory Modules
+# Directory level rules for directory Modules/AnimationLibrary
 
 # Recursive "all" directory target.
-Modules/all: Modules/ALIB/all
+Modules/AnimationLibrary/all: Modules/AnimationLibrary/src/all
+Modules/AnimationLibrary/all: Modules/AnimationLibrary/tests/all
 
-.PHONY : Modules/all
+.PHONY : Modules/AnimationLibrary/all
 
 # Recursive "preinstall" directory target.
-Modules/preinstall: Modules/ALIB/preinstall
+Modules/AnimationLibrary/preinstall: Modules/AnimationLibrary/src/preinstall
+Modules/AnimationLibrary/preinstall: Modules/AnimationLibrary/tests/preinstall
 
-.PHONY : Modules/preinstall
+.PHONY : Modules/AnimationLibrary/preinstall
 
 # Recursive "clean" directory target.
-Modules/clean: Modules/ALIB/clean
+Modules/AnimationLibrary/clean: Modules/AnimationLibrary/src/clean
+Modules/AnimationLibrary/clean: Modules/AnimationLibrary/tests/clean
 
-.PHONY : Modules/clean
+.PHONY : Modules/AnimationLibrary/clean
 
 #=============================================================================
-# Directory level rules for directory Modules/ALIB
+# Directory level rules for directory Modules/AnimationLibrary/src
 
 # Recursive "all" directory target.
-Modules/ALIB/all: Modules/ALIB/src/all
-Modules/ALIB/all: Modules/ALIB/tests/all
+Modules/AnimationLibrary/src/all: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
 
-.PHONY : Modules/ALIB/all
+.PHONY : Modules/AnimationLibrary/src/all
 
 # Recursive "preinstall" directory target.
-Modules/ALIB/preinstall: Modules/ALIB/src/preinstall
-Modules/ALIB/preinstall: Modules/ALIB/tests/preinstall
+Modules/AnimationLibrary/src/preinstall:
 
-.PHONY : Modules/ALIB/preinstall
+.PHONY : Modules/AnimationLibrary/src/preinstall
 
 # Recursive "clean" directory target.
-Modules/ALIB/clean: Modules/ALIB/src/clean
-Modules/ALIB/clean: Modules/ALIB/tests/clean
+Modules/AnimationLibrary/src/clean: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/clean
 
-.PHONY : Modules/ALIB/clean
+.PHONY : Modules/AnimationLibrary/src/clean
 
 #=============================================================================
-# Directory level rules for directory Modules/ALIB/src
+# Directory level rules for directory Modules/AnimationLibrary/tests
 
 # Recursive "all" directory target.
-Modules/ALIB/src/all: Modules/ALIB/src/CMakeFiles/ALIB.dir/all
+Modules/AnimationLibrary/tests/all: Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/all
 
-.PHONY : Modules/ALIB/src/all
+.PHONY : Modules/AnimationLibrary/tests/all
 
 # Recursive "preinstall" directory target.
-Modules/ALIB/src/preinstall:
+Modules/AnimationLibrary/tests/preinstall:
 
-.PHONY : Modules/ALIB/src/preinstall
+.PHONY : Modules/AnimationLibrary/tests/preinstall
 
 # Recursive "clean" directory target.
-Modules/ALIB/src/clean: Modules/ALIB/src/CMakeFiles/ALIB.dir/clean
+Modules/AnimationLibrary/tests/clean: Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/clean
 
-.PHONY : Modules/ALIB/src/clean
+.PHONY : Modules/AnimationLibrary/tests/clean
 
 #=============================================================================
-# Directory level rules for directory Modules/ALIB/tests
+# Directory level rules for directory Modules/ComponentCompiler
 
 # Recursive "all" directory target.
-Modules/ALIB/tests/all: Modules/ALIB/tests/CMakeFiles/TestALIB.dir/all
+Modules/ComponentCompiler/all: Modules/ComponentCompiler/src/all
+Modules/ComponentCompiler/all: Modules/ComponentCompiler/tests/all
 
-.PHONY : Modules/ALIB/tests/all
+.PHONY : Modules/ComponentCompiler/all
 
 # Recursive "preinstall" directory target.
-Modules/ALIB/tests/preinstall:
+Modules/ComponentCompiler/preinstall: Modules/ComponentCompiler/src/preinstall
+Modules/ComponentCompiler/preinstall: Modules/ComponentCompiler/tests/preinstall
 
-.PHONY : Modules/ALIB/tests/preinstall
+.PHONY : Modules/ComponentCompiler/preinstall
 
 # Recursive "clean" directory target.
-Modules/ALIB/tests/clean: Modules/ALIB/tests/CMakeFiles/TestALIB.dir/clean
+Modules/ComponentCompiler/clean: Modules/ComponentCompiler/src/clean
+Modules/ComponentCompiler/clean: Modules/ComponentCompiler/tests/clean
 
-.PHONY : Modules/ALIB/tests/clean
+.PHONY : Modules/ComponentCompiler/clean
 
 #=============================================================================
-# Target rules for target Modules/ALIB/src/CMakeFiles/ALIB.dir
+# Directory level rules for directory Modules/ComponentCompiler/src
+
+# Recursive "all" directory target.
+Modules/ComponentCompiler/src/all: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/all
+
+.PHONY : Modules/ComponentCompiler/src/all
+
+# Recursive "preinstall" directory target.
+Modules/ComponentCompiler/src/preinstall:
+
+.PHONY : Modules/ComponentCompiler/src/preinstall
+
+# Recursive "clean" directory target.
+Modules/ComponentCompiler/src/clean: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/clean
+
+.PHONY : Modules/ComponentCompiler/src/clean
+
+#=============================================================================
+# Directory level rules for directory Modules/ComponentCompiler/tests
+
+# Recursive "all" directory target.
+Modules/ComponentCompiler/tests/all: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/all
+
+.PHONY : Modules/ComponentCompiler/tests/all
+
+# Recursive "preinstall" directory target.
+Modules/ComponentCompiler/tests/preinstall:
+
+.PHONY : Modules/ComponentCompiler/tests/preinstall
+
+# Recursive "clean" directory target.
+Modules/ComponentCompiler/tests/clean: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/clean
+
+.PHONY : Modules/ComponentCompiler/tests/clean
+
+#=============================================================================
+# Target rules for target Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir
 
 # All Build rule for target.
-Modules/ALIB/src/CMakeFiles/ALIB.dir/all:
-	$(MAKE) -f Modules/ALIB/src/CMakeFiles/ALIB.dir/build.make Modules/ALIB/src/CMakeFiles/ALIB.dir/depend
-	$(MAKE) -f Modules/ALIB/src/CMakeFiles/ALIB.dir/build.make Modules/ALIB/src/CMakeFiles/ALIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=1,2 "Built target ALIB"
-.PHONY : Modules/ALIB/src/CMakeFiles/ALIB.dir/all
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all:
+	$(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/depend
+	$(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=1,2 "Built target AnimationLibrary"
+.PHONY : Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
 
 # Build rule for subdir invocation for target.
-Modules/ALIB/src/CMakeFiles/ALIB.dir/rule: cmake_check_build_system
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 Modules/ALIB/src/CMakeFiles/ALIB.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 0
-.PHONY : Modules/ALIB/src/CMakeFiles/ALIB.dir/rule
+.PHONY : Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/rule
 
 # Convenience name for target.
-ALIB: Modules/ALIB/src/CMakeFiles/ALIB.dir/rule
+AnimationLibrary: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/rule
 
-.PHONY : ALIB
+.PHONY : AnimationLibrary
 
 # clean rule for target.
-Modules/ALIB/src/CMakeFiles/ALIB.dir/clean:
-	$(MAKE) -f Modules/ALIB/src/CMakeFiles/ALIB.dir/build.make Modules/ALIB/src/CMakeFiles/ALIB.dir/clean
-.PHONY : Modules/ALIB/src/CMakeFiles/ALIB.dir/clean
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/clean:
+	$(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/clean
+.PHONY : Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/clean
 
 #=============================================================================
-# Target rules for target Modules/ALIB/tests/CMakeFiles/TestALIB.dir
+# Target rules for target Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir
 
 # All Build rule for target.
-Modules/ALIB/tests/CMakeFiles/TestALIB.dir/all: Modules/ALIB/src/CMakeFiles/ALIB.dir/all
-	$(MAKE) -f Modules/ALIB/tests/CMakeFiles/TestALIB.dir/build.make Modules/ALIB/tests/CMakeFiles/TestALIB.dir/depend
-	$(MAKE) -f Modules/ALIB/tests/CMakeFiles/TestALIB.dir/build.make Modules/ALIB/tests/CMakeFiles/TestALIB.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=3,4 "Built target TestALIB"
-.PHONY : Modules/ALIB/tests/CMakeFiles/TestALIB.dir/all
+Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/all: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
+	$(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/depend
+	$(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=6,7 "Built target TestAnimationLibrary"
+.PHONY : Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/all
 
 # Build rule for subdir invocation for target.
-Modules/ALIB/tests/CMakeFiles/TestALIB.dir/rule: cmake_check_build_system
+Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 Modules/ALIB/tests/CMakeFiles/TestALIB.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 0
-.PHONY : Modules/ALIB/tests/CMakeFiles/TestALIB.dir/rule
+.PHONY : Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/rule
 
 # Convenience name for target.
-TestALIB: Modules/ALIB/tests/CMakeFiles/TestALIB.dir/rule
+TestAnimationLibrary: Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/rule
 
-.PHONY : TestALIB
+.PHONY : TestAnimationLibrary
 
 # clean rule for target.
-Modules/ALIB/tests/CMakeFiles/TestALIB.dir/clean:
-	$(MAKE) -f Modules/ALIB/tests/CMakeFiles/TestALIB.dir/build.make Modules/ALIB/tests/CMakeFiles/TestALIB.dir/clean
-.PHONY : Modules/ALIB/tests/CMakeFiles/TestALIB.dir/clean
+Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/clean:
+	$(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/clean
+.PHONY : Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/clean
+
+#=============================================================================
+# Target rules for target Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir
+
+# All Build rule for target.
+Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/all: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
+	$(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/depend
+	$(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=3,4,5 "Built target ComponentCompiler"
+.PHONY : Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/all
+
+# Build rule for subdir invocation for target.
+Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 0
+.PHONY : Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/rule
+
+# Convenience name for target.
+ComponentCompiler: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/rule
+
+.PHONY : ComponentCompiler
+
+# clean rule for target.
+Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/clean:
+	$(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/clean
+.PHONY : Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/clean
+
+#=============================================================================
+# Target rules for target Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir
+
+# All Build rule for target.
+Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/all: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
+	$(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/depend
+	$(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=8,9,10 "Built target TestComponentCompiler"
+.PHONY : Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/all
+
+# Build rule for subdir invocation for target.
+Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 0
+.PHONY : Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/rule
+
+# Convenience name for target.
+TestComponentCompiler: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/rule
+
+.PHONY : TestComponentCompiler
+
+# clean rule for target.
+Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/clean:
+	$(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/clean
+.PHONY : Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

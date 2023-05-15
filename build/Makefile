@@ -111,30 +111,56 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ALIB
+# Target rules for targets named AnimationLibrary
 
 # Build rule for target.
-ALIB: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ALIB
-.PHONY : ALIB
+AnimationLibrary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AnimationLibrary
+.PHONY : AnimationLibrary
 
 # fast build rule for target.
-ALIB/fast:
-	$(MAKE) -f Modules/ALIB/src/CMakeFiles/ALIB.dir/build.make Modules/ALIB/src/CMakeFiles/ALIB.dir/build
-.PHONY : ALIB/fast
+AnimationLibrary/fast:
+	$(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build
+.PHONY : AnimationLibrary/fast
 
 #=============================================================================
-# Target rules for targets named TestALIB
+# Target rules for targets named TestAnimationLibrary
 
 # Build rule for target.
-TestALIB: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestALIB
-.PHONY : TestALIB
+TestAnimationLibrary: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestAnimationLibrary
+.PHONY : TestAnimationLibrary
 
 # fast build rule for target.
-TestALIB/fast:
-	$(MAKE) -f Modules/ALIB/tests/CMakeFiles/TestALIB.dir/build.make Modules/ALIB/tests/CMakeFiles/TestALIB.dir/build
-.PHONY : TestALIB/fast
+TestAnimationLibrary/fast:
+	$(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build
+.PHONY : TestAnimationLibrary/fast
+
+#=============================================================================
+# Target rules for targets named ComponentCompiler
+
+# Build rule for target.
+ComponentCompiler: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ComponentCompiler
+.PHONY : ComponentCompiler
+
+# fast build rule for target.
+ComponentCompiler/fast:
+	$(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build
+.PHONY : ComponentCompiler/fast
+
+#=============================================================================
+# Target rules for targets named TestComponentCompiler
+
+# Build rule for target.
+TestComponentCompiler: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 TestComponentCompiler
+.PHONY : TestComponentCompiler
+
+# fast build rule for target.
+TestComponentCompiler/fast:
+	$(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build
+.PHONY : TestComponentCompiler/fast
 
 # Help Target
 help:
@@ -144,8 +170,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ALIB"
-	@echo "... TestALIB"
+	@echo "... AnimationLibrary"
+	@echo "... TestAnimationLibrary"
+	@echo "... ComponentCompiler"
+	@echo "... TestComponentCompiler"
 .PHONY : help
 
 
