@@ -8,3 +8,5 @@ set(CMAKE_CXX_CLANG_TIDY clang-tidy -checks=bugprone-*,clang-analyzer-*,concurre
 
 add_subdirectory(Modules/AnimationLibrary)
 add_subdirectory(Modules/ComponentCompiler)
+add_subdirectory(Modules/ProgramCompiler)
+add_subdirectory(Modules/Main)

@@ -10,6 +10,6 @@
 ## Semantic Analysis
 ## Code Generation
 
-# Running Programs
-## Consistency Check
-## Runtime
+# Consistency Checker
+
+# Runtime
