@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o"
-  "CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o"
+  "CMakeFiles/TestComponentCompiler.dir/no.cpp.o"
   "TestComponentCompiler"
   "TestComponentCompiler.pdb"
 )

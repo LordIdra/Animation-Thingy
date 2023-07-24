@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestAddition.cpp" "/home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o"
+  "/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestRead.cpp" "/home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

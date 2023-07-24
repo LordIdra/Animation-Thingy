@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/TestSubtraction.cpp" "/home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o"
-  "/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp" "/home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o"
+  "/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/no.cpp" "/home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../Modules/ComponentCompiler/tests/../src"
+  "../Modules/ComponentCompiler/tests/../../AnimationLibrary/src"
   "/home/idra/.conan2/p/catche826dfbf478db/p/include"
   )
 

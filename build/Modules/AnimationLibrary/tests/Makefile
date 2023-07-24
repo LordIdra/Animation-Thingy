@@ -125,32 +125,32 @@ TestAnimationLibrary/fast:
 	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build
 .PHONY : TestAnimationLibrary/fast
 
-TestAddition.o: TestAddition.cpp.o
+TestRead.o: TestRead.cpp.o
 
-.PHONY : TestAddition.o
+.PHONY : TestRead.o
 
 # target to build an object file
-TestAddition.cpp.o:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o
-.PHONY : TestAddition.cpp.o
+TestRead.cpp.o:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o
+.PHONY : TestRead.cpp.o
 
-TestAddition.i: TestAddition.cpp.i
+TestRead.i: TestRead.cpp.i
 
-.PHONY : TestAddition.i
+.PHONY : TestRead.i
 
 # target to preprocess a source file
-TestAddition.cpp.i:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.i
-.PHONY : TestAddition.cpp.i
+TestRead.cpp.i:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.i
+.PHONY : TestRead.cpp.i
 
-TestAddition.s: TestAddition.cpp.s
+TestRead.s: TestRead.cpp.s
 
-.PHONY : TestAddition.s
+.PHONY : TestRead.s
 
 # target to generate assembly for a file
-TestAddition.cpp.s:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.s
-.PHONY : TestAddition.cpp.s
+TestRead.cpp.s:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.s
+.PHONY : TestRead.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TestAnimationLibrary"
-	@echo "... TestAddition.o"
-	@echo "... TestAddition.i"
-	@echo "... TestAddition.s"
+	@echo "... TestRead.o"
+	@echo "... TestRead.i"
+	@echo "... TestRead.s"
 .PHONY : help
 
 

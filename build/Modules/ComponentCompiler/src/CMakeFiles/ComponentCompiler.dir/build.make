@@ -57,22 +57,9 @@ include Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/progress.
 # Include the compile flags for this target's objects.
 include Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/flags.make
 
-Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.o: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/flags.make
-Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.o: ../Modules/ComponentCompiler/src/Subtraction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.o"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/src && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp
-
-Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.i"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp > CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.i
-
-Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.s"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp -o CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.s
-
 Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.o: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/flags.make
 Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.o: ../Modules/ComponentCompiler/src/Main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.o"
 	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/src && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Main.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ComponentCompiler.dir/Main.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Main.cpp
 
 Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.i: cmake_force
@@ -85,22 +72,20 @@ Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.s: cmake
 
 # Object files for target ComponentCompiler
 ComponentCompiler_OBJECTS = \
-"CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.o" \
 "CMakeFiles/ComponentCompiler.dir/Main.cpp.o"
 
 # External object files for target ComponentCompiler
 ComponentCompiler_EXTERNAL_OBJECTS =
 
-Modules/ComponentCompiler/src/ComponentCompiler: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.o
-Modules/ComponentCompiler/src/ComponentCompiler: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.o
-Modules/ComponentCompiler/src/ComponentCompiler: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make
-Modules/ComponentCompiler/src/ComponentCompiler: Modules/AnimationLibrary/src/libAnimationLibrary.a
-Modules/ComponentCompiler/src/ComponentCompiler: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable ComponentCompiler"
+Modules/ComponentCompiler/src/libComponentCompiler.a: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.o
+Modules/ComponentCompiler/src/libComponentCompiler.a: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make
+Modules/ComponentCompiler/src/libComponentCompiler.a: Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libComponentCompiler.a"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/src && $(CMAKE_COMMAND) -P CMakeFiles/ComponentCompiler.dir/cmake_clean_target.cmake
 	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ComponentCompiler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build: Modules/ComponentCompiler/src/ComponentCompiler
+Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build: Modules/ComponentCompiler/src/libComponentCompiler.a
 
 .PHONY : Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build
 

@@ -57,27 +57,27 @@ include Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/progr
 # Include the compile flags for this target's objects.
 include Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/flags.make
 
-Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o: Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/flags.make
-Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o: ../Modules/AnimationLibrary/tests/TestAddition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/tests && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestAddition.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestAddition.cpp
+Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o: Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/flags.make
+Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o: ../Modules/AnimationLibrary/tests/TestRead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/tests && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestRead.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestRead.cpp
 
-Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.i"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestAddition.cpp > CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.i
+Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.i"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestRead.cpp > CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.i
 
-Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.s"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestAddition.cpp -o CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.s
+Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.s"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestRead.cpp -o CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.s
 
 # Object files for target TestAnimationLibrary
 TestAnimationLibrary_OBJECTS = \
-"CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o"
+"CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o"
 
 # External object files for target TestAnimationLibrary
 TestAnimationLibrary_EXTERNAL_OBJECTS =
 
-Modules/AnimationLibrary/tests/TestAnimationLibrary: Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o
+Modules/AnimationLibrary/tests/TestAnimationLibrary: Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o
 Modules/AnimationLibrary/tests/TestAnimationLibrary: Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make
 Modules/AnimationLibrary/tests/TestAnimationLibrary: Modules/AnimationLibrary/src/libAnimationLibrary.a
 Modules/AnimationLibrary/tests/TestAnimationLibrary: /home/idra/.conan2/p/catche826dfbf478db/p/lib/libCatch2Main.a

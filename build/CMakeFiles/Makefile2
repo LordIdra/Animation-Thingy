@@ -191,12 +191,12 @@ Modules/ComponentCompiler/tests/clean: Modules/ComponentCompiler/tests/CMakeFile
 Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all:
 	$(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/depend
 	$(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=1,2 "Built target AnimationLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=1,2,3 "Built target AnimationLibrary"
 .PHONY : Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
 
 # Build rule for subdir invocation for target.
 Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 0
 .PHONY : Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/rule
@@ -223,7 +223,7 @@ Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/all: Modules/
 
 # Build rule for subdir invocation for target.
 Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/idra/GitHub/Animation-Thingy/build/CMakeFiles 0
 .PHONY : Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/rule
@@ -245,7 +245,7 @@ Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/clean:
 Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/all: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
 	$(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/depend
 	$(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=3,4,5 "Built target ComponentCompiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=4,5 "Built target ComponentCompiler"
 .PHONY : Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/all
 
 # Build rule for subdir invocation for target.
@@ -272,7 +272,7 @@ Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/clean:
 Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/all: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/all
 	$(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/depend
 	$(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=8,9,10 "Built target TestComponentCompiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=8,9 "Built target TestComponentCompiler"
 .PHONY : Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/all
 
 # Build rule for subdir invocation for target.

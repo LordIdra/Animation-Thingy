@@ -1,0 +1,19 @@
+pub class KeywordText (position: coord, text: string)
+    let geometry = text position
+    geometry.align left
+	geometry.color [100 200 255]
+	geometry.size 3
+	geometry.bold true
+
+pub class ListItemText (position: coord)
+    let geometry = text position
+    geometry.align left
+	geometry.color [100 200 255]
+	geometry.size 2
+	geometry.bold false
+
+pub class StatementEndText (position: coord)
+    let geometry = text position
+	geometry.color [100 200 255]
+	geometry.size 4
+	geometry.bold false

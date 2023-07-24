@@ -1,4 +1,11 @@
-.cache/**
-.obsidian/**
-.vscode/**
-build/**
+/build/**/*
+!/build/**/
+
+/.vscode/**/*
+!/.vscode/**/
+
+/.obsidian/**/*
+!/.obsidian/**/
+
+/.cache/**/*
+!/.cache/**/

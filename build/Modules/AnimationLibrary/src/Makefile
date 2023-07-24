@@ -125,32 +125,59 @@ AnimationLibrary/fast:
 	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build
 .PHONY : AnimationLibrary/fast
 
-Addition.o: Addition.cpp.o
+errors/Errors.o: errors/Errors.cpp.o
 
-.PHONY : Addition.o
+.PHONY : errors/Errors.o
 
 # target to build an object file
-Addition.cpp.o:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.o
-.PHONY : Addition.cpp.o
+errors/Errors.cpp.o:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o
+.PHONY : errors/Errors.cpp.o
 
-Addition.i: Addition.cpp.i
+errors/Errors.i: errors/Errors.cpp.i
 
-.PHONY : Addition.i
+.PHONY : errors/Errors.i
 
 # target to preprocess a source file
-Addition.cpp.i:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.i
-.PHONY : Addition.cpp.i
+errors/Errors.cpp.i:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.i
+.PHONY : errors/Errors.cpp.i
 
-Addition.s: Addition.cpp.s
+errors/Errors.s: errors/Errors.cpp.s
 
-.PHONY : Addition.s
+.PHONY : errors/Errors.s
 
 # target to generate assembly for a file
-Addition.cpp.s:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.s
-.PHONY : Addition.cpp.s
+errors/Errors.cpp.s:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.s
+.PHONY : errors/Errors.cpp.s
+
+readfile/ReadFile.o: readfile/ReadFile.cpp.o
+
+.PHONY : readfile/ReadFile.o
+
+# target to build an object file
+readfile/ReadFile.cpp.o:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o
+.PHONY : readfile/ReadFile.cpp.o
+
+readfile/ReadFile.i: readfile/ReadFile.cpp.i
+
+.PHONY : readfile/ReadFile.i
+
+# target to preprocess a source file
+readfile/ReadFile.cpp.i:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.i
+.PHONY : readfile/ReadFile.cpp.i
+
+readfile/ReadFile.s: readfile/ReadFile.cpp.s
+
+.PHONY : readfile/ReadFile.s
+
+# target to generate assembly for a file
+readfile/ReadFile.cpp.s:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.s
+.PHONY : readfile/ReadFile.cpp.s
 
 # Help Target
 help:
@@ -161,9 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AnimationLibrary"
-	@echo "... Addition.o"
-	@echo "... Addition.i"
-	@echo "... Addition.s"
+	@echo "... errors/Errors.o"
+	@echo "... errors/Errors.i"
+	@echo "... errors/Errors.s"
+	@echo "... readfile/ReadFile.o"
+	@echo "... readfile/ReadFile.i"
+	@echo "... readfile/ReadFile.s"
 .PHONY : help
 
 

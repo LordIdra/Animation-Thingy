@@ -1,9 +1,10 @@
 set(source_files
-    "Addition.cpp"
+    errors/Errors.cpp
+    readfile/ReadFile.cpp
 )
 
 set(test_files
-    "TestAddition.cpp"
+    TestRead.cpp
 )
 
 add_subdirectory(src)

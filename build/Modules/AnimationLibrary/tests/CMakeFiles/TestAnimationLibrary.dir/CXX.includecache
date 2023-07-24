@@ -6,7 +6,41 @@
 
 #IncludeRegexTransform: 
 
-../Modules/AnimationLibrary/src/Addition.hpp
+../Modules/AnimationLibrary/src/Colors.hpp
+Types.hpp
+-
+
+../Modules/AnimationLibrary/src/Types.hpp
+iostream
+-
+stack
+-
+string
+-
+vector
+-
+array
+-
+list
+-
+set
+-
+unordered_map
+-
+memory
+-
+optional
+-
+filesystem
+-
+
+../Modules/AnimationLibrary/src/errors/Errors.hpp
+Colors.hpp
+../Modules/AnimationLibrary/src/errors/Colors.hpp
+
+../Modules/AnimationLibrary/src/readfile/ReadFile.hpp
+Types.hpp
+-
 
 /home/idra/.conan2/p/catche826dfbf478db/p/include/catch2/catch_assertion_info.hpp
 catch2/internal/catch_result_type.hpp
@@ -308,9 +342,13 @@ catch2/internal/catch_move_and_forward.hpp
 
 /home/idra/.conan2/p/catche826dfbf478db/p/include/catch2/internal/catch_void_type.hpp
 
-/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestAddition.cpp
-Addition.hpp
--
+/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/TestRead.cpp
 catch2/catch_test_macros.hpp
 -
+Types.hpp
+/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/Types.hpp
+errors/Errors.hpp
+/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/errors/Errors.hpp
+readfile/ReadFile.hpp
+/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/tests/readfile/ReadFile.hpp
 

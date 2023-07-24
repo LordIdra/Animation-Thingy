@@ -1,9 +1,8 @@
-#include <iostream>
-#include <Subtraction.hpp>
-
+#include "language/Terminals.hpp"
+#include "statemachine/RegexToNFA.hpp"
+#include "../../AnimationLibrary/src/statemachine/NFA.hpp"
 
 
 auto main() -> int {
-    std::cout << "Yooo" << Subtract() << "\n";
-    return 0;
+    const NFA stateMachine = RegexToNFA::BuildNFA(terminalRegex);
 }

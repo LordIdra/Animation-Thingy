@@ -27,11 +27,5 @@
             "name": "conan-release",
             "configurePreset": "conan-release"
         }
-    ],
-    "testPresets": [
-        {
-            "name": "conan-release",
-            "configurePreset": "conan-release"
-        }
     ]
 }

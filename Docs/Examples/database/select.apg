@@ -1,0 +1,13 @@
+import primitives
+use primitives
+
+pub class KeywordSelect (position: coord)
+    setcenter position
+
+    SelectText [0 0]
+    DeviceRect [2 2] [12 4]
+    DeviceRect [2 4] [12 6]
+    DeviceRect [2 8] [12 10]
+    DeviceRect [2 10] [12 12]
+
+    let port = DevicePort [1 15]

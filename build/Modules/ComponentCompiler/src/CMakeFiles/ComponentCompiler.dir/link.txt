@@ -1,1 +1,2 @@
-/usr/bin/c++  -m64 -O3 -DNDEBUG  -m64 CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.o CMakeFiles/ComponentCompiler.dir/Main.cpp.o  -o ComponentCompiler  ../../AnimationLibrary/src/libAnimationLibrary.a 
+/usr/bin/ar qc libComponentCompiler.a  CMakeFiles/ComponentCompiler.dir/Main.cpp.o
+/usr/bin/ranlib libComponentCompiler.a

@@ -57,48 +57,33 @@ include Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/pro
 # Include the compile flags for this target's objects.
 include Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/flags.make
 
-Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/flags.make
-Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o: ../Modules/ComponentCompiler/tests/TestSubtraction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/TestSubtraction.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/TestSubtraction.cpp
+Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.o: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/flags.make
+Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.o: ../Modules/ComponentCompiler/tests/no.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.o"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/no.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestComponentCompiler.dir/no.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/no.cpp
 
-Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.i"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/TestSubtraction.cpp > CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.i
+Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestComponentCompiler.dir/no.cpp.i"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/no.cpp > CMakeFiles/TestComponentCompiler.dir/no.cpp.i
 
-Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.s"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/TestSubtraction.cpp -o CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.s
-
-Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/flags.make
-Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o: ../Modules/ComponentCompiler/src/Subtraction.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp
-
-Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.i"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp > CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.i
-
-Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.s"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp -o CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.s
+Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/TestComponentCompiler.dir/no.cpp.s"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/tests/no.cpp -o CMakeFiles/TestComponentCompiler.dir/no.cpp.s
 
 # Object files for target TestComponentCompiler
 TestComponentCompiler_OBJECTS = \
-"CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o" \
-"CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o"
+"CMakeFiles/TestComponentCompiler.dir/no.cpp.o"
 
 # External object files for target TestComponentCompiler
 TestComponentCompiler_EXTERNAL_OBJECTS =
 
-Modules/ComponentCompiler/tests/TestComponentCompiler: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o
-Modules/ComponentCompiler/tests/TestComponentCompiler: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o
+Modules/ComponentCompiler/tests/TestComponentCompiler: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.o
 Modules/ComponentCompiler/tests/TestComponentCompiler: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make
 Modules/ComponentCompiler/tests/TestComponentCompiler: Modules/AnimationLibrary/src/libAnimationLibrary.a
 Modules/ComponentCompiler/tests/TestComponentCompiler: /home/idra/.conan2/p/catche826dfbf478db/p/lib/libCatch2Main.a
 Modules/ComponentCompiler/tests/TestComponentCompiler: /home/idra/.conan2/p/catche826dfbf478db/p/lib/libCatch2.a
 Modules/ComponentCompiler/tests/TestComponentCompiler: Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable TestComponentCompiler"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable TestComponentCompiler"
 	cd /home/idra/GitHub/Animation-Thingy/build/Modules/ComponentCompiler/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/TestComponentCompiler.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -57,30 +57,45 @@ include Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/progress.ma
 # Include the compile flags for this target's objects.
 include Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/flags.make
 
-Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.o: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/flags.make
-Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.o: ../Modules/AnimationLibrary/src/Addition.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.o"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/Addition.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AnimationLibrary.dir/Addition.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/Addition.cpp
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/flags.make
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o: ../Modules/AnimationLibrary/src/errors/Errors.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/errors/Errors.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/errors/Errors.cpp
 
-Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AnimationLibrary.dir/Addition.cpp.i"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/Addition.cpp > CMakeFiles/AnimationLibrary.dir/Addition.cpp.i
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.i"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/errors/Errors.cpp > CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.i
 
-Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AnimationLibrary.dir/Addition.cpp.s"
-	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/Addition.cpp -o CMakeFiles/AnimationLibrary.dir/Addition.cpp.s
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.s"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/errors/Errors.cpp -o CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.s
+
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/flags.make
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o: ../Modules/AnimationLibrary/src/readfile/ReadFile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-checks=bugprone-*,clang-analyzer-*,concurrency-*,cppcoreguidelines-*,misc-*,modernize-*,performance-*,portability-*,readability-*,-misc-unused-using-decls,-cppcoreguidelines-pro-type-union-access,-readability-implicit-bool-conversion,-readability-magic-numbers,-bugprone-narrowing-conversions,-modernize-pass-by-value,-cppcoreguidelines-avoid-magic-numbers,-performance-inefficient-string-concatenation" --source=/home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/readfile/ReadFile.cpp -- /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o -c /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/readfile/ReadFile.cpp
+
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.i"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/readfile/ReadFile.cpp > CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.i
+
+Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.s"
+	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/idra/GitHub/Animation-Thingy/Modules/AnimationLibrary/src/readfile/ReadFile.cpp -o CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.s
 
 # Object files for target AnimationLibrary
 AnimationLibrary_OBJECTS = \
-"CMakeFiles/AnimationLibrary.dir/Addition.cpp.o"
+"CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o" \
+"CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o"
 
 # External object files for target AnimationLibrary
 AnimationLibrary_EXTERNAL_OBJECTS =
 
-Modules/AnimationLibrary/src/libAnimationLibrary.a: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/Addition.cpp.o
+Modules/AnimationLibrary/src/libAnimationLibrary.a: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o
+Modules/AnimationLibrary/src/libAnimationLibrary.a: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o
 Modules/AnimationLibrary/src/libAnimationLibrary.a: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make
 Modules/AnimationLibrary/src/libAnimationLibrary.a: Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libAnimationLibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/idra/GitHub/Animation-Thingy/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libAnimationLibrary.a"
 	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && $(CMAKE_COMMAND) -P CMakeFiles/AnimationLibrary.dir/cmake_clean_target.cmake
 	cd /home/idra/GitHub/Animation-Thingy/build/Modules/AnimationLibrary/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AnimationLibrary.dir/link.txt --verbose=$(VERBOSE)
 

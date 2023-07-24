@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/TestAnimationLibrary.dir/TestAddition.cpp.o"
+  "CMakeFiles/TestAnimationLibrary.dir/TestRead.cpp.o"
   "TestAnimationLibrary"
   "TestAnimationLibrary.pdb"
 )

@@ -1,0 +1,63 @@
+import primitives
+use primitives
+
+
+pub class Computer (position: coord)
+    setcenter position
+
+    DeviceRect [2 0] [14 2]
+    DeviceRect [8 4] [12 8]
+    DeviceRect [0 8] [18 14]
+    DeviceRect [2 10] [16 12]
+    DeviceText [10 12] "COMPUTER"
+
+    let port = DevicePort [13 1]
+
+
+pub class Switch (position: coord)
+    setcenter position
+
+    DeviceRect [0 0] [26 8]
+    DeviceText [22 -2] "SWITCH"
+
+    let port1 = DevicePort [3 3]
+    let port2 = DevicePort [7 3]
+    let port3 = DevicePort [11 3]
+    let port4 = DevicePort [15 3]
+    let port5 = DevicePort [19 3]
+    let port6 = DevicePort [23 3]
+
+    let explanation = DeviceExplanation [23 -1]
+
+
+pub class Printer (position: coord)
+    setcenter position
+
+    DeviceRect [0 0] [14 10]
+    DeviceRect [2 2] [12 4]
+    DeviceRect [2 6] [6 8]
+    DeviceText [7 -2] "PRINTER"
+
+    let port = DevicePort [9 7]
+
+
+pub class Server (position: coord)
+    setcenter position
+
+    DeviceRect [0 0] [14 16]
+    DeviceRect [2 2] [12 4]
+    DeviceRect [2 4] [12 6]
+    DeviceRect [2 8] [12 10]
+    DeviceRect [2 10] [12 12]
+
+    let port = DevicePort [1 15]
+
+
+pub class Router (position: coord)
+    setcenter position
+
+    DeviceRect [0 0] [14 12]
+    DeviceRect [2 4] [6 6]
+    DeviceText [13 -1] "ROUTER"
+
+    let explanation = DeviceExplanation [14 -1]

@@ -152,33 +152,6 @@ Main.cpp.s:
 	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Main.cpp.s
 .PHONY : Main.cpp.s
 
-Subtraction.o: Subtraction.cpp.o
-
-.PHONY : Subtraction.o
-
-# target to build an object file
-Subtraction.cpp.o:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.o
-.PHONY : Subtraction.cpp.o
-
-Subtraction.i: Subtraction.cpp.i
-
-.PHONY : Subtraction.i
-
-# target to preprocess a source file
-Subtraction.cpp.i:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.i
-.PHONY : Subtraction.cpp.i
-
-Subtraction.s: Subtraction.cpp.s
-
-.PHONY : Subtraction.s
-
-# target to generate assembly for a file
-Subtraction.cpp.s:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/Subtraction.cpp.s
-.PHONY : Subtraction.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -191,9 +164,6 @@ help:
 	@echo "... Main.o"
 	@echo "... Main.i"
 	@echo "... Main.s"
-	@echo "... Subtraction.o"
-	@echo "... Subtraction.i"
-	@echo "... Subtraction.s"
 .PHONY : help
 
 

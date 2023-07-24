@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/AnimationLibrary.dir/Addition.cpp.o"
+  "CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o"
+  "CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o"
   "libAnimationLibrary.a"
   "libAnimationLibrary.pdb"
 )

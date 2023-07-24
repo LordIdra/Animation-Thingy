@@ -6,13 +6,3 @@
 
 #IncludeRegexTransform: 
 
-../Modules/ComponentCompiler/src/Subtraction.hpp
-
-/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Main.cpp
-iostream
--
-Subtraction.hpp
--
-
-/home/idra/GitHub/Animation-Thingy/Modules/ComponentCompiler/src/Subtraction.cpp
-

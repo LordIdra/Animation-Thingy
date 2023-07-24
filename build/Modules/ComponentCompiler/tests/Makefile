@@ -125,59 +125,32 @@ TestComponentCompiler/fast:
 	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build
 .PHONY : TestComponentCompiler/fast
 
-TestSubtraction.o: TestSubtraction.cpp.o
+no.o: no.cpp.o
 
-.PHONY : TestSubtraction.o
-
-# target to build an object file
-TestSubtraction.cpp.o:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.o
-.PHONY : TestSubtraction.cpp.o
-
-TestSubtraction.i: TestSubtraction.cpp.i
-
-.PHONY : TestSubtraction.i
-
-# target to preprocess a source file
-TestSubtraction.cpp.i:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.i
-.PHONY : TestSubtraction.cpp.i
-
-TestSubtraction.s: TestSubtraction.cpp.s
-
-.PHONY : TestSubtraction.s
-
-# target to generate assembly for a file
-TestSubtraction.cpp.s:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/TestSubtraction.cpp.s
-.PHONY : TestSubtraction.cpp.s
-
-__/src/Subtraction.o: __/src/Subtraction.cpp.o
-
-.PHONY : __/src/Subtraction.o
+.PHONY : no.o
 
 # target to build an object file
-__/src/Subtraction.cpp.o:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.o
-.PHONY : __/src/Subtraction.cpp.o
+no.cpp.o:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.o
+.PHONY : no.cpp.o
 
-__/src/Subtraction.i: __/src/Subtraction.cpp.i
+no.i: no.cpp.i
 
-.PHONY : __/src/Subtraction.i
+.PHONY : no.i
 
 # target to preprocess a source file
-__/src/Subtraction.cpp.i:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.i
-.PHONY : __/src/Subtraction.cpp.i
+no.cpp.i:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.i
+.PHONY : no.cpp.i
 
-__/src/Subtraction.s: __/src/Subtraction.cpp.s
+no.s: no.cpp.s
 
-.PHONY : __/src/Subtraction.s
+.PHONY : no.s
 
 # target to generate assembly for a file
-__/src/Subtraction.cpp.s:
-	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/__/src/Subtraction.cpp.s
-.PHONY : __/src/Subtraction.cpp.s
+no.cpp.s:
+	cd /home/idra/GitHub/Animation-Thingy/build && $(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/no.cpp.s
+.PHONY : no.cpp.s
 
 # Help Target
 help:
@@ -188,12 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... TestComponentCompiler"
-	@echo "... TestSubtraction.o"
-	@echo "... TestSubtraction.i"
-	@echo "... TestSubtraction.s"
-	@echo "... __/src/Subtraction.o"
-	@echo "... __/src/Subtraction.i"
-	@echo "... __/src/Subtraction.s"
+	@echo "... no.o"
+	@echo "... no.i"
+	@echo "... no.s"
 .PHONY : help
 
 

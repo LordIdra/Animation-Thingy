@@ -1,2 +1,2 @@
-/usr/bin/ar qc libAnimationLibrary.a  CMakeFiles/AnimationLibrary.dir/Addition.cpp.o
+/usr/bin/ar qc libAnimationLibrary.a  CMakeFiles/AnimationLibrary.dir/errors/Errors.cpp.o CMakeFiles/AnimationLibrary.dir/readfile/ReadFile.cpp.o
 /usr/bin/ranlib libAnimationLibrary.a
