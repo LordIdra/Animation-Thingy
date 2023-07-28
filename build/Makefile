@@ -111,32 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named AnimationLibrary
-
-# Build rule for target.
-AnimationLibrary: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 AnimationLibrary
-.PHONY : AnimationLibrary
-
-# fast build rule for target.
-AnimationLibrary/fast:
-	$(MAKE) -f Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build.make Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/build
-.PHONY : AnimationLibrary/fast
-
-#=============================================================================
-# Target rules for targets named TestAnimationLibrary
-
-# Build rule for target.
-TestAnimationLibrary: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 TestAnimationLibrary
-.PHONY : TestAnimationLibrary
-
-# fast build rule for target.
-TestAnimationLibrary/fast:
-	$(MAKE) -f Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build.make Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/build
-.PHONY : TestAnimationLibrary/fast
-
-#=============================================================================
 # Target rules for targets named ComponentCompiler
 
 # Build rule for target.
@@ -146,7 +120,7 @@ ComponentCompiler: cmake_check_build_system
 
 # fast build rule for target.
 ComponentCompiler/fast:
-	$(MAKE) -f Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/build
+	$(MAKE) -f Modules/Compiler/src/CMakeFiles/ComponentCompiler.dir/build.make Modules/Compiler/src/CMakeFiles/ComponentCompiler.dir/build
 .PHONY : ComponentCompiler/fast
 
 #=============================================================================
@@ -159,7 +133,7 @@ TestComponentCompiler: cmake_check_build_system
 
 # fast build rule for target.
 TestComponentCompiler/fast:
-	$(MAKE) -f Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/build
+	$(MAKE) -f Modules/Compiler/tests/CMakeFiles/TestComponentCompiler.dir/build.make Modules/Compiler/tests/CMakeFiles/TestComponentCompiler.dir/build
 .PHONY : TestComponentCompiler/fast
 
 # Help Target
@@ -170,8 +144,6 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... AnimationLibrary"
-	@echo "... TestAnimationLibrary"
 	@echo "... ComponentCompiler"
 	@echo "... TestComponentCompiler"
 .PHONY : help

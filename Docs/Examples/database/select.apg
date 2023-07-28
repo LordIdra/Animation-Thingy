@@ -10,4 +10,4 @@ pub class KeywordSelect (position: coord)
     DeviceRect [2 8] [12 10]
     DeviceRect [2 10] [12 12]
 
-    let port = DevicePort [1 15]
+    var port = DevicePort [1 15]

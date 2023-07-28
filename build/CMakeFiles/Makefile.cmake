@@ -8,12 +8,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../Modules/AnimationLibrary/CMakeLists.txt"
-  "../Modules/AnimationLibrary/src/CMakeLists.txt"
-  "../Modules/AnimationLibrary/tests/CMakeLists.txt"
-  "../Modules/ComponentCompiler/CMakeLists.txt"
-  "../Modules/ComponentCompiler/src/CMakeLists.txt"
-  "../Modules/ComponentCompiler/tests/CMakeLists.txt"
+  "../Modules/Compiler/CMakeLists.txt"
+  "../Modules/Compiler/src/CMakeLists.txt"
+  "../Modules/Compiler/tests/CMakeLists.txt"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
@@ -55,18 +52,13 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Modules/AnimationLibrary/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Modules/AnimationLibrary/src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Modules/AnimationLibrary/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Modules/ComponentCompiler/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Modules/ComponentCompiler/src/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "Modules/ComponentCompiler/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Modules/Compiler/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Modules/Compiler/src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "Modules/Compiler/tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "Modules/AnimationLibrary/src/CMakeFiles/AnimationLibrary.dir/DependInfo.cmake"
-  "Modules/AnimationLibrary/tests/CMakeFiles/TestAnimationLibrary.dir/DependInfo.cmake"
-  "Modules/ComponentCompiler/src/CMakeFiles/ComponentCompiler.dir/DependInfo.cmake"
-  "Modules/ComponentCompiler/tests/CMakeFiles/TestComponentCompiler.dir/DependInfo.cmake"
+  "Modules/Compiler/src/CMakeFiles/ComponentCompiler.dir/DependInfo.cmake"
+  "Modules/Compiler/tests/CMakeFiles/TestComponentCompiler.dir/DependInfo.cmake"
   )

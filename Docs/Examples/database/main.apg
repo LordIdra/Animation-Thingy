@@ -5,14 +5,14 @@ class SqlStatement (position: coord) (sqlStatementType: string)
     setcenter coord
 
 
-    let computer1 = devices.computer [50 50]
-    let computer2 = devices.computer [100 50]
-    let server = devices.server [50 -50]
-    let switch = devices.switch [75 0]
-    let switch_explanation_text = devices.switch_explanation_text [25 25]
+    var computer1 = devices.computer [50 50]
+    var computer2 = devices.computer [100 50]
+    var server = devices.server [50 -50]
+    var switch = devices.switch [75 0]
+    var switch_explanation_text = devices.switch_explanation_text [25 25]
 
     // Lists
-    let list = []
+    var list = []
     list.add computer1
     list.remove 0
     list.clear
@@ -34,4 +34,4 @@ class SqlStatement (position: coord) (sqlStatementType: string)
 
 
 pub fun main
-    let sqlStatement1 = SqlStatement [0, 0]
+    var sqlStatement1 = SqlStatement [0, 0]

@@ -1,3 +1,6 @@
 {
-    "cmake.sourceDirectory": "/home/idra/GitHub/Animation-Thingy"
+    "cmake.sourceDirectory": "/home/idra/GitHub/Animation-Thingy",
+    "lldb.showDisassembly": "auto",
+    "lldb.dereferencePointers": true,
+    "lldb.consoleMode": "commands"
 }
