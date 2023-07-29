@@ -57,7 +57,7 @@ namespace scanner {
 
     auto NFA::ConstructDot() -> NFA {
         NFA newNfa = NFA();
-        for (char character : language::language) {
+        for (char character : language::characters) {
             newNfa.initialState->AddTransition(character, newNfa.acceptingState);
         }
         return newNfa;
@@ -74,16 +74,16 @@ namespace scanner {
         int startIndex = 0;
         int endIndex = 0;
 
-        for (int i = 0; i < language::language.size(); i++) {
-            if (language::language.at(i) == startCharacter) {
+        for (int i = 0; i < language::characters.size(); i++) {
+            if (language::characters.at(i) == startCharacter) {
                 startIndex = i;
-            } else if (language::language.at(i) == endCharacter) {
+            } else if (language::characters.at(i) == endCharacter) {
                 endIndex = i;
             }
         }
 
         for (int i = startIndex; i <= endIndex; i++) {
-            newNfa.initialState->AddTransition(language::language.at(i), newNfa.acceptingState);
+            newNfa.initialState->AddTransition(language::characters.at(i), newNfa.acceptingState);
         }
 
         return newNfa;
@@ -91,7 +91,7 @@ namespace scanner {
 
     auto NFA::ConstructUpArrow(const char exceptCharacter) -> NFA {
         NFA newNfa = NFA();
-        for (const char character : language::language) {
+        for (const char character : language::characters) {
             if (character != exceptCharacter) {
                 newNfa.initialState->AddTransition(character, newNfa.acceptingState);
             }

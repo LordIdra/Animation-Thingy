@@ -1,0 +1,71 @@
+fun Wire(from: coord, to: coord) -> line
+    var test = 5 < 6 & true
+    var geometry = line(from, to)
+    geometry.width(2)
+    geometry.opacity(0.9)
+    ret geometry
+
+fun WideWire(from: coord, to: coord) -> line
+    var geometry = Wire(from, to)
+    geometry.width(4)
+    ret geometry
+
+pub class LanWire
+    pub var geometry: Wire
+    pub fun New(from: coord, to: coord)
+        geometry = Wire(from, to)
+        geometry.color([0.8 0.4 0.1])
+
+pub class WanWire
+    pub var geometry : line
+    pub fun Init(from: coord, to: coord)
+        geometry = WideWire(from, to)
+        geometry.color([1.0 0.4 0.1])
+
+pub class WireEndpoint
+    pub var geometry: rect
+    pub fun Init(from: coord, to: coord)
+        geometry = rect(from, to)
+        geometry.color([0.8 0.4 0.1])
+        geometry.outline.width(2)
+
+pub class NetworkName
+    pub var geometry: text
+    pub fun Init(position: coord, contents: string)
+        geometry = text(position)
+        geometry.color([1.0 1.0 1.0])
+        geometry.size(5)
+        geometry.bold(true)
+        geometry.contents(contents)
+
+pub class DeviceName
+    pub var geometry: text
+    pub fun Init(position: coord)
+        geometry = text(position)
+        geometry.color([1.0 1.0 1.0])
+        geometry.size(3)
+        geometry.bold(true)
+
+pub class DeviceExplanation
+    pub var geometry: icon
+    pub fun Init(position: coord)
+        geometry = icon(position)
+        geometry.style(question_circle)
+        geometry.color([1.0 1.0 1.0])
+        geometry.horizontal_align(center)
+        geometry.radius(0.8)
+
+pub class DeviceRect
+    pub var geometry: rect
+    pub fun Init(from: coord, to: coord)
+        geometry = rect(from, to)
+        geometry.outline.color([0.1 0.4 0.8])
+        geometry.outline.width(2)
+
+pub class DevicePort
+    pub var geometry: rect
+    pub fun Init(position: coord)
+        setcenter(position)
+        geometry = rect([-1 -1], [1 1])
+        geometry.color([0.1 0.4 0.8])
+        geometry.outline.width(2)

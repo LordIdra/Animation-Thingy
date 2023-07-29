@@ -18,9 +18,7 @@ namespace follow {
                 set<SymbolType> followSetForNonTerminal = followSet.at(terminalOrNonTerminal);
                 for (const SymbolType x : followSetForNonTerminal) {
                     if ((addTo.count(x)) == 0) {
-                        if (x != 0) {
-                            addTo.insert(x);
-                        }
+                        addTo.insert(x);
                     }
                 }
             }

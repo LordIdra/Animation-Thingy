@@ -1,5 +1,6 @@
 #include "Parser.hpp"
 #include "State.hpp"
+#include "errors/Errors.hpp"
 #include "language/Language.hpp"
 #include "language/Symbols.hpp"
 #include "parser/Tables.hpp"
@@ -28,42 +29,11 @@ namespace parser {
         bool parseComplete = false;
 
         while (!parseComplete) {
-            if (terminalIndex == lines.at(lineIndex).terminals.size()) {
-                terminalIndex = 0;
-                lineIndex++;
-            }
-
             Terminal currentTerminal = lines.at(lineIndex).terminals.at(terminalIndex);
-            Tables::Action action = Tables::GetAction(stateStack.top(), currentTerminal.type);
 
-            switch (action.type) {
-                case Tables::ACCEPT:
-                    parseComplete = true;
-                    break;
+            cout << "[" << lineIndex << ":" << terminalIndex << "] NEW STATE" << "\n";
 
-                case Tables::SHIFT:
-                    stateStack.push(action.state);
-                    symbolStack.push(currentTerminal.type);
-                    terminalIndex++;
-                    break;
-
-                case Tables::REDUCE:
-                    for (int i = 0; i < action.item.right.size(); i++) {
-                        stateStack.pop();
-                        symbolStack.pop();
-                    }
-                    symbolStack.push(action.item.left);
-                    stateStack.push(Tables::GetGoto(stateStack.top(), action.item.left));
-                    break;
-            }
-
-            cout << "[" << lineIndex << ":" << terminalIndex << "] ";
-            switch (action.type) {
-                case Tables::ACCEPT: cout << "ACCEPT"; break;
-                case Tables::SHIFT: cout << "SHIFT " << action.state; break;
-                case Tables::REDUCE: cout << "REDUCE " << language::ToString(action.item.left); break;
-            }
-            cout << "\n";
+            cout << " next terminal | " << language::ToString(lines.at(lineIndex).terminals.at(terminalIndex).type) << "\n";
 
             cout << " symbols | ";
             for (stack<Symbol> clone = symbolStack; !clone.empty(); clone.pop()) {
@@ -83,10 +53,62 @@ namespace parser {
                 }
                 cout << "}\n";
             }
-            cout << "\n";
-        }
 
-        std::cout << "wtf it actually worked???????" << "\n";
+            cout << " possible transitions |" << "\n";
+            for (auto x : Tables::GetActionTable()) {
+                if (x.first.first != stateStack.top()) {
+                    continue;
+                }
+                cout << "  " << language::ToString(x.first.second) << " -> ";
+                switch (x.second.type) {
+                    case Tables::ACCEPT: cout << "ACCEPT"; break;
+                    case Tables::SHIFT: cout << "SHIFT " << x.second.state; break;
+                    case Tables::REDUCE: cout << "REDUCE " << language::ToString(x.second.item.left); break;
+                }
+                cout << "\n";
+            }
+
+            if (!Tables::HasAction(stateStack.top(), currentTerminal.type)) {
+                Errors::InvalidSyntax(path, lines.at(lineIndex).number, currentTerminal);
+                return nullptr;
+            }
+
+            Tables::Action action = Tables::GetAction(stateStack.top(), currentTerminal.type);
+
+            cout << " action | ";
+            switch (action.type) {
+                case Tables::ACCEPT: cout << "ACCEPT"; break;
+                case Tables::SHIFT: cout << "SHIFT " << action.state; break;
+                case Tables::REDUCE: cout << "REDUCE " << language::ToString(action.item.left); break;
+            }
+            cout << "\n";
+            cout << "\n";
+
+            switch (action.type) {
+                case Tables::ACCEPT:
+                    parseComplete = true;
+                    break;
+
+                case Tables::SHIFT:
+                    stateStack.push(action.state);
+                    symbolStack.push(currentTerminal.type);
+                    terminalIndex++;
+                    if (terminalIndex == lines.at(lineIndex).terminals.size()) {
+                        terminalIndex = 0;
+                        lineIndex++;
+                    }
+                    break;
+
+                case Tables::REDUCE:
+                    for (int i = 0; i < action.item.right.size(); i++) {
+                        stateStack.pop();
+                        symbolStack.pop();
+                    }
+                    symbolStack.push(action.item.left);
+                    stateStack.push(Tables::GetGoto(stateStack.top(), action.item.left));
+                    break;
+            }
+        }
 
         return nullptr;
     }

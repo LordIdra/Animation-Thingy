@@ -24,6 +24,7 @@ TEST_CASE("TestReadSuccess") {
 
     const vector<string> actual = ReadFile::Read("../../../../Modules/Compiler/tests/resources/TestRead.txt");
 
+    Errors::PrintErrors();
     REQUIRE(Errors::GetErrorCount() == 0);
     REQUIRE(actual == expected);
 }

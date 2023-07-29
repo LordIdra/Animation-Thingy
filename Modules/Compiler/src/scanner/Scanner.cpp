@@ -4,6 +4,7 @@
 #include "language/Symbols.hpp"
 #include "scanner/DFA/DFA.hpp"
 #include <optional>
+#include <vector>
 
 
 namespace scanner {
@@ -41,20 +42,13 @@ namespace scanner {
             return indentationTerminals;
         }
 
-        auto ComputeFinalLine(const Line &currentLine) -> optional<Line> {
-            if (currentLine.indentationLevel == 0) {
-                return {};
-            }
+        auto ComputeFinalTerminals(const Line &lastLine) -> vector<Terminal> {
             vector<Terminal> terminals;
-            for (int i = 0; i < currentLine.indentationLevel; i++) {
+            for (int i = 0; i < lastLine.indentationLevel; i++) {
                 terminals.push_back(Terminal(language::INDENT_MINUS, ""));
             }
-            terminals.push_back(Terminal(language::NEWLINE, ""));
-            return Line {
-                .number = currentLine.number + 1,
-                .indentationLevel = 0,
-                .terminals = terminals
-            };
+            terminals.push_back(Terminal(language::END_OF_FILE, ""));
+            return terminals;
         }
 
         auto FindAcceptingTerminal(const map<SymbolType, DFA> &activeDfas) -> optional<SymbolType> {
@@ -160,23 +154,40 @@ namespace scanner {
         vector<Line> scannedLines;
         int lineNumber = 1;
         for (const string &line : lines) {
-            vector<Terminal> terminals;
 
+            if (line.empty()) {
+                lineNumber++;
+                continue;
+            }
+
+            vector<Terminal> indentationTerminals;
             const int indentationLevel = ComputeIndentationLevel(line);
-
             if (scannedLines.size() > 0) {
                 for (const Terminal &terminal : ComputerIndentationTerminals(indentationLevel, scannedLines.at(scannedLines.size()-1).indentationLevel)) {
-                    terminals.push_back(terminal);
+                    indentationTerminals.push_back(terminal);
                 }
             }
 
+            vector<Terminal> lineTerminals;
             for (const Terminal &terminal : ParseLine(terminalDfas, line, path, lineNumber)) {
-                terminals.push_back(terminal);
+                lineTerminals.push_back(terminal);
             }
 
-            terminals.push_back(Terminal(
-                language::NEWLINE,
-                ""));
+            // Don't push back lines that are entirely whitespace
+            if (lineTerminals.empty()) {
+                lineNumber++;
+                continue;
+            }
+
+            // Combine terminal vectors together
+            vector<Terminal> terminals;
+            for (const Terminal &terminal : indentationTerminals) {
+                terminals.push_back(terminal);
+            }
+            for (const Terminal &terminal : lineTerminals) {
+                terminals.push_back(terminal);
+            }
+            terminals.push_back(Terminal(language::NEWLINE, ""));
 
             scannedLines.push_back(Line{ 
                     .number = lineNumber,
@@ -186,14 +197,9 @@ namespace scanner {
             lineNumber++;
         }
 
-        const optional<Line> finalLine = ComputeFinalLine(scannedLines.at(scannedLines.size()-1));
-        if (finalLine.has_value()) {
-            scannedLines.push_back(finalLine.value());
+        for (const Terminal terminal : ComputeFinalTerminals(scannedLines.at(scannedLines.size()-1))) {
+            scannedLines.at(scannedLines.size()-1).terminals.push_back(terminal);
         }
-
-        scannedLines.at(scannedLines.size()-1).terminals.push_back(Terminal(
-                language::END_OF_FILE,
-                ""));
 
         return scannedLines;
     }

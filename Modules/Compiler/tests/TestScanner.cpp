@@ -4,6 +4,7 @@
 #include "errors/Errors.hpp"
 #include "files/ReadFile.hpp"
 #include "../src/language/Language.hpp"
+#include "language/Symbols.hpp"
 #include "scanner/Scanner.hpp"
 
 using namespace language;
@@ -14,6 +15,7 @@ TEST_CASE("TestScannerFail") {
     Errors::Reset();
 
     const vector<string> input = ReadFile::Read("../../../../Modules/Compiler/tests/resources/TestScannerFail.txt");
+    REQUIRE(Errors::GetErrorCount() == 0);
 
     const vector<Line> expectedOutput = {
         Line{.number = 1, .indentationLevel = 0,
@@ -26,11 +28,7 @@ TEST_CASE("TestScannerFail") {
 
         Line{.number = 3, .indentationLevel = 1,
             .terminals = { 
-                Terminal{INDENT_PLUS, ""}, Terminal{IDENTIFIER, "yoo5"}, Terminal{NEWLINE, ""} }},
-            
-        Line{.number = 4, .indentationLevel = 0,
-            .terminals = { 
-                Terminal{INDENT_MINUS, ""}, Terminal{NEWLINE, ""}, Terminal{END_OF_FILE, ""} }}
+                Terminal{INDENT_PLUS, ""}, Terminal{IDENTIFIER, "yoo5"}, Terminal{NEWLINE, ""}, Terminal{INDENT_MINUS, ""}, Terminal{END_OF_FILE, ""} }},
     };
 
     const vector<Line> actualOutput = scanner::Scan("test", input);
@@ -46,10 +44,12 @@ TEST_CASE("TestScannerSuccess") {
     Errors::Reset();
 
     const vector<string> input = ReadFile::Read("../../../../Modules/Compiler/tests/resources/TestScannerSuccess.txt");
+    Errors::PrintErrors();
+    REQUIRE(Errors::GetErrorCount() == 0);
 
     const vector<Line> expectedOutput = {
-        Line{.number = 1, .indentationLevel = 0,
-            .terminals = {Terminal{NEWLINE, ""}}},
+        //Line{.number = 1, .indentationLevel = 0,
+        //    .terminals = {Terminal{NEWLINE, ""}}},
 
         Line{.number = 2, .indentationLevel = 0,
             .terminals = { 
@@ -64,10 +64,10 @@ TEST_CASE("TestScannerSuccess") {
             .terminals = { 
                 Terminal{INDENT_PLUS, ""}, 
                 Terminal{PUB, "pub"}, 
-                Terminal{PRIMITIVE_LINE, "line"}, 
-                Terminal{PRIMITIVE_RECT, "rect"}, 
-                Terminal{PRIMITIVE_CIRCLE, "circle"}, 
-                Terminal{PRIMITIVE_TEXT, "text"},
+                Terminal{TYPE_LINE, "line"}, 
+                Terminal{TYPE_RECT, "rect"}, 
+                Terminal{TYPE_CIRCLE, "circle"}, 
+                Terminal{TYPE_TEXT, "text"},
                 Terminal{NEWLINE, ""}}},
 
         Line{.number = 4, .indentationLevel = 1, 
@@ -88,7 +88,7 @@ TEST_CASE("TestScannerSuccess") {
         Line{.number = 6, .indentationLevel = 1,
             .terminals = {Terminal{INDENT_MINUS, ""}, Terminal{IDENTIFIER, "hi"}, Terminal{NEWLINE, ""}}},
 
-        Line{.number = 7, .indentationLevel = 0,
+        Line{.number = 8, .indentationLevel = 0,
             .terminals = { 
                 Terminal{INDENT_MINUS, ""},
                 Terminal{LITERAL_INT, "0"}, 
@@ -100,7 +100,7 @@ TEST_CASE("TestScannerSuccess") {
                 Terminal{LITERAL_INT, "-5"},
                 Terminal{NEWLINE, ""}}},
 
-        Line{.number = 8, .indentationLevel = 0,
+        Line{.number = 9, .indentationLevel = 0,
             .terminals = { 
                 Terminal{IDENTIFIER, "hello"}, 
                 Terminal{IDENTIFIER, "h3ll0"}, 
@@ -114,7 +114,6 @@ TEST_CASE("TestScannerSuccess") {
     const vector<Line> actualOutput = scanner::Scan("TestScannerSuccess", input);
 
     Errors::PrintErrors();
-
     REQUIRE(Errors::GetErrorCount() == 0);
 
     for (int i = 0; i < actualOutput.size(); i++) {

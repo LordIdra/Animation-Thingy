@@ -63,7 +63,7 @@ namespace scanner {
             unprocessedStates.pop();
 
             // Process the state for every character in the language
-            for (const char character : language::language) {
+            for (const char character : language::characters) {
 
                 // Get all the states reachable by a transition to the character (including the epsilon closure of those states)
                 const set<shared_ptr<NFAState>> statesReachableByCharacter = GetStatesReachableByCharacter(currentState, character);

@@ -1,0 +1,12 @@
+pub fun hello
+    var x = "hello"
+    const y = 5
+
+pub class yoooo
+    var y = 7
+
+    pub fun oh_no
+        var h = ()
+    
+    fun help_me
+        rect i.hate.everything and.especially.lr.parsers

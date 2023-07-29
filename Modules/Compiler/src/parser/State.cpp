@@ -37,21 +37,22 @@ auto State::ExpandClosure() -> void {
             }
 
             // Only proceed if next symbol is a non-terminal
-            const SymbolType nextSymbolType = item.GetCurrentSymbol();
-            if (sets::IsSymbolTerminal(nextSymbolType)) {
+            const SymbolType currentSymbolType = item.GetCurrentSymbol();
+            if (sets::IsSymbolTerminal(currentSymbolType)) {
                 continue;
             }
 
+            vector<SymbolType> lookahead;
+            if (item.position == item.right.size()-1) {
+                lookahead = item.lookahead;
+            } else {
+                first::AddFirstSet(lookahead, item.GetNextSymbol());
+            }
+
             // Add all productions with an LHS of nextSymbolType
-            for (const ProductionRight &productionRight : language::nonTerminalProductions.at(nextSymbolType)) {
-                vector<SymbolType> lookahead;
-                if (item.position == item.right.size()-1) {
-                    lookahead = item.lookahead;
-                } else {
-                    first::AddFirstSet(lookahead, nextSymbolType);
-                }
+            for (const ProductionRight &productionRight : language::nonTerminalProductions.at(currentSymbolType)) {
                 newProductions.push_back(ProductionItem{
-                    .left = nextSymbolType, 
+                    .left = currentSymbolType, 
                     .right = productionRight, 
                     .position = 0,
                     .lookahead = lookahead});
@@ -59,13 +60,27 @@ auto State::ExpandClosure() -> void {
         }
 
         // Add our new productions to the items list
-        for (ProductionItem item : newProductions) {
+        for (const ProductionItem &item : newProductions) {
             bool itemAlreadyExists = false;
-            for (const ProductionItem existingItem : items) {
+            for (ProductionItem &existingItem : items) {
                 if (item == existingItem) {
                     itemAlreadyExists = true;
                     break;
                 }
+
+                // if (item.left == existingItem.left && item.right == existingItem.right && item.position == existingItem.position) {
+
+                //     // Merge lookahead sets
+                //     for (const SymbolType newSymbol : item.lookahead) {
+                //         if (find(existingItem.lookahead.begin(), existingItem.lookahead.end(), newSymbol) == existingItem.lookahead.end()) {
+                //             existingItem.lookahead.push_back(newSymbol);
+                //             hasChanged =  true;
+                //         }
+                //     }
+
+                //     itemAlreadyExists = true;
+                //     break;
+                // }
             }
             if (!itemAlreadyExists) {
                 items.push_back(item);
@@ -122,7 +137,6 @@ auto State::BuildNextStates() -> void {
         AddTransition(pair.first, newState);
     }
 
-    // DEBUG
     cout << "STATE " << "\n";
     for (auto x : items) {
         cout << " " << language::ToString(x.left) << " ->";

@@ -14,9 +14,7 @@ namespace first {
             set<SymbolType> firstSetForNonTerminal = firstSet.at(nonTerminal);
             for (const SymbolType y : firstSetForNonTerminal) {
                 if (addTo.count(y) == 0) {
-                    if (y != 0) {
-                        addTo.insert(y);
-                    }
+                    addTo.insert(y);
                 }
             }
         }
@@ -77,13 +75,13 @@ namespace first {
                 while (setChanged) {
                     
                     setChanged = false;
-                    for (auto x : firstSet) {
-                        std::cout << language::ToString(x.first) << " -> ";
-                        for (auto y : x.second) {
-                            std::cout << language::ToString(y) << " ";
-                        }
-                        std::cout << "\n";
-                    }
+                    // for (auto x : firstSet) {
+                    //     std::cout << language::ToString(x.first) << " -> ";
+                    //     for (auto y : x.second) {
+                    //         std::cout << language::ToString(y) << " ";
+                    //     }
+                    //     std::cout << "\n";
+                    // }
                     for (auto &pair : firstSet) {
                         ExpandFirstSetsOneIteration(setChanged, pair.second);
                     }
@@ -109,9 +107,7 @@ namespace first {
             set<SymbolType> firstSetForNonTerminal = GetFirstSet().at(nonTerminal);
             for (const SymbolType y : firstSetForNonTerminal) {
                 if (addTo.count(y) == 0) {
-                    if (y != 0) {
-                        addTo.insert(y);
-                    }
+                    addTo.insert(y);
                 }
             }
         }
@@ -120,9 +116,7 @@ namespace first {
         set<SymbolType> firstSetForNonTerminal = GetFirstSet().at(nonTerminal);
         for (const SymbolType y : firstSetForNonTerminal) {
             if (find(addTo.begin(), addTo.end(), y) == addTo.end()) {
-                if (y != 0) {
-                    addTo.push_back(y);
-                }
+                addTo.push_back(y);
             }
         }
     }
